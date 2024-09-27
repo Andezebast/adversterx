@@ -81,8 +81,17 @@ class UserSearch {
         case user.name.toLowerCase().includes(filterValue):
         case user.username.toLowerCase().includes(filterValue):
         case user.email.toLowerCase().includes(filterValue):
+        case user.address.street.toLowerCase().includes(filterValue):
+        case user.address.suite.toLowerCase().includes(filterValue):
         case user.address.city.toLowerCase().includes(filterValue):
+        case user.address.zipcode.toLowerCase().includes(filterValue):
+        case user.address.geo.lat.toLowerCase().includes(filterValue):
+        case user.address.geo.lng.toLowerCase().includes(filterValue):
+        case user.phone.toLowerCase().includes(filterValue):
+        case user.website.toLowerCase().includes(filterValue):
         case user.company.name.toLowerCase().includes(filterValue):
+        case user.company.catchPhrase.toLowerCase().includes(filterValue):
+        case user.company.bs.toLowerCase().includes(filterValue):
           return true;
         default:
           return false;
