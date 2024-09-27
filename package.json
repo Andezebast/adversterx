@@ -1,9 +1,12 @@
 {
+  "homepage": "https://Andezebast.github.io/adversterx",
   "name": "test-adversterx",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "webpack serve",
     "build": "webpack"
   },
@@ -13,6 +16,7 @@
   "description": "",
   "devDependencies": {
     "css-loader": "^7.1.2",
+    "gh-pages": "^6.1.1",
     "style-loader": "^4.0.0",
     "webpack": "^5.95.0",
     "webpack-cli": "^5.1.4",
